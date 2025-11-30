@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accès et Hébergement | Mariage d'Alice et Benjamin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fff9f5;
+            color: #4a4a4a;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: #4a4a4a;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d4a5a5;
+        }
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        .access-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .access-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .access-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #4a4a4a;
+        }
+        .access-card p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+        }
+        .map-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            height: 400px;
+        }
+        .stay-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .stay-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .stay-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+        }
+        .stay-card p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .option {
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border-left: 4px solid #d4a5a5;
+        }
+        footer {
+            background: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="details.html">Détails et Programme</a></li>
+            <li><a href="travel.html">Accès et Hébergement</a></li>
+            <li><a href="registry.html">Liste de Mariage</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h1 class="text-4xl font-bold mb-4 text-center">Accès et Hébergement</h1>
+        <div class="two-column">
+            <div class="access-column">
+                <div class="access-card">
+                    <h3>Accès en Voiture</h3>
+                    <p>1h30 de route depuis Paris</p>
+                    <p>1h de route depuis Reims</p>
+                    <p>3h de route depuis Bruxelles</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.104276054614!2d3.2183852!3d49.2724515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e88b2f703beae7%3A0x3252cd5640e8c761!2sLongpont%20Abbey!5e0!3m2!1sfr!2sfr!4v1630000000000"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div class="stay-column">
+                <div class="stay-card">
+                    <h3>Lieu Réservé pour le Séjour</h3>
+                    <p>Afin que tout le monde puisse profiter pleinement du week-end, nous avons déjà réservé plusieurs gîtes et chambres d’hôtel autour de l’abbaye.<br><br>
+        Une partie de ces hébergements est destinée à la famille et aux amis venant de loin, le reste sera attribué selon l’ordre des RSVP.<br></p>
+                </div>
+                <div class="stay-card">
+                    <h3>Options dans les Villes Proches</h3>
+                    <div class="options">
+                        <div class="option">
+                            <h4>Villers-Cotterêts (15 min)</h4>
+                            <p>Gîtes de Saint-Remy: Gîtes chaleureux et tout équipés, parfaits pour les groupes ou familles.</p>
+                        </div>
+                        <div class="option">
+                            <h4>Soissons (25 min)</h4>
+                            <p>Best Western: Hôtel moderne, pratique et très bien situé pour découvrir la ville.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Alice & Benjamin | Mariage Longpont 2026</p>
+    </footer>
+</body>
+</html>

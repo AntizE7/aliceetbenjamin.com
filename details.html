@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails et Programme | Mariage d'Alice et Benjamin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fff9f5;
+            color: #4a4a4a;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: #4a4a4a;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d4a5a5;
+        }
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        .details-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .details-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .details-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #4a4a4a;
+        }
+        .details-card p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+        }
+        .note-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .note {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a4a4a;
+        }
+        .note-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="details.html">Détails et Programme</a></li>
+            <li><a href="travel.html">Accès et Hébergement</a></li>
+            <li><a href="registry.html">Liste de Mariage</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h1 class="text-4xl font-bold mb-4 text-center">Détails et Programme</h1>
+        <div class="two-column">
+            <div class="details-column">
+                <div class="details-card">
+                    <h3>Date</h3>
+                    <p>11 avril 2026</p>
+                    <p>Messe à 15h00</p>
+                </div>
+                <div class="details-card">
+                    <h3>Lieu de la réception</h3>
+                    <p>Abbaye de Longpont</p>
+                    <p>02600 Longpont, France</p>
+                </div>
+                <div class="details-card">
+                    <h3>Code vestimentaire</h3>
+                    <p>Formel | Cocktail</p>
+                </div>
+            </div>
+            <div class="note-column">
+                <div class="note">
+                    <p>Rejoignez-nous pour la célébration lors de la messe en l'abbaye de Longpont le 11 avril à 15h00, suivie de la réception.</p>
+                </div>
+                <img src="Dessin1.png" alt="Abbaye de Longpont - Dessin" class="note-image">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Alice & Benjamin | Mariage Longpont 2026</p>
+    </footer>
+</body>
+</html>
